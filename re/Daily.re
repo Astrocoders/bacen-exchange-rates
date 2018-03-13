@@ -15,6 +15,19 @@ type currency = [
   | `GBP
 ];
 
+let getCurrencyType = (currency: currency) => switch(currency) {
+  | `NOK
+  | `DKK
+  | `SEK
+  | `CHF
+  | `USD
+  | `CAD
+  | `JPY => "A"
+  | `AUD
+  | `EUR
+  | `GBP => "B"
+};
+
 module ExchangeRateDecode = {
   type exchangeReport =
     | Opening
