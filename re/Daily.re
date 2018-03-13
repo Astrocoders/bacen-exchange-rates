@@ -37,7 +37,7 @@ module ExchangeRateDecode = {
     buyPrice: json |> field("cotacaoCompra", float),
     sellPrice: json |> field("cotacaoVenda", float),
     date: json |> field("dataHoraCotacao", string) |> Js.Date.fromString,
-    report: json |> field("dataHoraCotacao", string) |> exchangeReportFromString
+    report: json |> field("tipoBoletim", string) |> exchangeReportFromString
     }
   };
   let decode = json => {
@@ -61,5 +61,4 @@ let fetchCurrencyRatesForPeriod = (~currency: currency, ~date) => {
   |> Fetch.fetch
   |> then_(Fetch.Response.text)
   |> then_(Function.Infix.( Json.parseOrRaise >. ExchangeRateDecode.decode >. resolve ))
-  |> then_(Function.Infix.(Js.log >. resolve))
 };
