@@ -1,5 +1,5 @@
 {
-  "name": "bacen-exchange-rates",
+  "name": "bs-bacen-exchange-rates",
   "version": "1.0.0",
   "description": "BACEN exchange rates using dadosabertos",
   "repository": "git@github.com:Astrocoders/bacen-exchange-rates.git",
