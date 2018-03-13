@@ -1,0 +1,29 @@
+{
+  "name": "bacen-exchange-rates",
+  "version": "1.0.0",
+  "description": "BACEN exchange rates using dadosabertos",
+  "repository": "git@github.com:Astrocoders/bacen-exchange-rates.git",
+  "author": "Gabriel R. Abreu <grsabreu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@glennsl/bs-json": "^1.1.3",
+    "bs-abstract": "^0.12.0",
+    "bs-fetch": "^0.2.1",
+    "bs-moment": "^0.2.4",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.21.0"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.0",
+    "bs-platform": "^2.2.2",
+    "jest": "^22.1.4"
+  },
+  "scripts": {
+    "start": "yarn bs:watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "bs:build": "bsb -make-world -clean-world",
+    "bs:watch": "bsb -make-world -clean-world -w",
+    "bs:setup": "bsb -make-world"
+  }
+}
