@@ -1,6 +1,6 @@
 {
   "name": "bs-bacen-exchange-rates",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "BACEN exchange rates using dadosabertos",
   "repository": "git@github.com:Astrocoders/bacen-exchange-rates.git",
   "author": "Gabriel R. Abreu <grsabreu@gmail.com>",
