@@ -389,21 +389,19 @@ browser-resolve@^1.11.2:
   dependencies:
     resolve "1.1.7"
 
-bs-abstract@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/bs-abstract/-/bs-abstract-0.12.0.tgz#73e0db7d4b01ecec613c5b331f95571736412a75"
-
 bs-fetch@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.2.1.tgz#165bed867009f2e91efb959ca1c0ff940d8cd19a"
+  integrity sha512-DYnWclV5mDwyh0gFKQF0+z5a1HCFhkUaF74dyNPF//9llxJa+R4Io4B3AJnXbycFBHVz38N86IGASwZ1FvK2Hw==
 
 bs-moment@^0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/bs-moment/-/bs-moment-0.2.4.tgz#829e07c2d6ec7b9c414f0ae1f2d108bd905af651"
 
-bs-platform@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-2.2.2.tgz#95ff37719771bbf310e8376fedd1148865c0da19"
+bs-platform@^4.0.14:
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.14.tgz#1d9e9622d59ebf4d39408d07b41997201c5f9750"
+  integrity sha512-bxeMwZPnJ90r48SavF60pkzGn7heaoHn7IF7fpPdh5L8WZfCzf76AikH2zWJii4QahUeInvRN1tNPWQt3ckKJQ==
 
 bser@^2.0.0:
   version "2.0.0"

@@ -15,7 +15,8 @@ type currency = [
   | `GBP
 ];
 
-let getCurrencyType = (currency: currency) => switch(currency) {
+let getCurrencyType = (currency: currency) =>
+  switch (currency) {
   | `NOK
   | `DKK
   | `SEK
@@ -26,7 +27,7 @@ let getCurrencyType = (currency: currency) => switch(currency) {
   | `AUD
   | `EUR
   | `GBP => "B"
-};
+  };
 
 module ExchangeRateDecode = {
   type exchangeReport =
@@ -71,14 +72,12 @@ let getFetchURL = (~currency: currency, ~date) => {
 
 let fetchCurrencyRatesForPeriod = (~currency: currency, ~date) =>
   Js.Promise.(
-    BsAbstract.(
+    (
       getFetchURL(~currency, ~date)
       |> Fetch.fetch
       |> then_(Fetch.Response.text)
-      |> then_(
-           Function.Infix.(
-             Json.parseOrRaise >. ExchangeRateDecode.decode >. resolve
-           ),
+      |> then_(value =>
+           value->Json.parseOrRaise->ExchangeRateDecode.decode->resolve
          )
     )
   );

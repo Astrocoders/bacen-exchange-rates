@@ -3,7 +3,7 @@
   "reason": {
     "react-jsx": 2
   },
-  "bs-dependencies": ["bs-moment", "bs-fetch", "bs-abstract", "@glennsl/bs-json"],
+  "bs-dependencies": ["bs-moment", "bs-fetch", "@glennsl/bs-json"],
   "bs-dev-dependencies": ["@glennsl/bs-jest"],
   "bsc-flags": ["-bs-super-errors"],
   "refmt": 3,
